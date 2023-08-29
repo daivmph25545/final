@@ -20,4 +20,3 @@ app.use(cors())
 app.use('/auth', authRouter)
 app.use('/password', passwordRouter)
 export const viteNodeApp = app;
-// 
