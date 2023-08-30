@@ -22,4 +22,3 @@ app.use('/auth', authRouter)
 app.use('/password', passwordRouter)
 app.use('/category', categoryRouter)
 export const viteNodeApp = app;
-// 

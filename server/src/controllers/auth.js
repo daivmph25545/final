@@ -122,6 +122,7 @@ export const verify = async (req, res) => {
     });
   }
 };
+
 // getsuser
 export const getAllUser = async (req, res) => {
   try {
@@ -205,6 +206,9 @@ export const updateUser = async (req, res) => {
 
 // Đăng nhập
 
+
+
+
 export const logIn = async (req, res) => {
   try {
     const { email, password } = req.body;
@@ -246,4 +250,8 @@ export const logIn = async (req, res) => {
       message: "Lỗi server: " + error.message,
     });
   }
+
 };
+
+
+
