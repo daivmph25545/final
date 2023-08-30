@@ -1,9 +1,10 @@
 import express from "express"
 
-import { getAllUser, getOneUser, register, removeUser, updateUser, verify } from "../controllers/auth"
+import { getAllUser, getOneUser, logIn, register, removeUser, updateUser, verify } from "../controllers/auth"
 
 const router = express.Router()
 router.post( '/register', register )
+router.post( '/login', logIn )
 
 router.post( '/verify', verify )
 router.get( '/getAllUser', getAllUser )
